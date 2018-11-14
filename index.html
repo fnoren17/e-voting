@@ -1,180 +1,114 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <h2>Scroll Indicator</h2>
-      <div class="chapter-container">
-        <div id="chap1" class="chapter">Chapter 1</div>
-        <div id="chap2" class="chapter">Chapter 2</div>
-        <div id="chap3" class="chapter">Chapter 3</div>
-        <div id="chap4" class="chapter">Chapter 4</div>
-        <div id="chap5" class="chapter">Chapter 5</div>
-      </div>
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-    </div>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="content">
-      <h3>Scroll Down to See The Effect</h3>
-      <p>
-        We have created a "progress bar" to
-        <b>show how far a page has been scrolled</b>.
-      </p>
-      <p>It also <b>works when you scroll back up</b>.</p>
-      <p>
-        It is even <b>responsive</b>! Resize the browser window to see the
-        effect.
-      </p>
-      <div id="chapter1">
-        <h1 class="chapter-heading">Chapter 1</h1>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter2">
-        <h1 class="chapter-heading">Chapter 2</h1>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter3">
-        <h1 class="chapter-heading">Chapter 3</h1>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter4">
-        <h1 class="chapter-heading">Chapter 4</h1>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+  	
+	<title>Responsive Vertical Timeline</title>
+</head>
+<body>
+	<header>
+	      <div class="chapter-container">
+	        <div id="chap1" class="chapter">Chapter 1</div>
+	        <div id="chap2" class="chapter">Chapter 2</div>
+	        <div id="chap3" class="chapter">Chapter 3</div>
+	        <div id="chap4" class="chapter">Chapter 4</div>
+	        <div id="chap5" class="chapter">Chapter 5</div>
+	      </div>
+	      <div class="progress-container">
+	        <div class="progress-bar" id="myBar"></div>
+	      </div>
+	</header>
 
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter5">
-        <h1 class="chapter-heading">Chapter 5</h1>
+	<section class="cd-timeline js-cd-timeline">
+		<div class="cd-timeline__container">
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+					<img src="img/cd-icon-picture.svg" alt="Picture">
+				</div> <!-- cd-timeline__img -->
 
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-    </div>
+				<div id ="chapter1" class="cd-timeline__content js-cd-content">
+					<h2>Title of section 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+					<a href="#0" class="cd-timeline__read-more">Read more</a>
+					<span class="cd-timeline__date">Jan 14</span>
+				</div> <!-- cd-timeline__content -->
+			</div> <!-- cd-timeline__block -->
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+					<img src="img/cd-icon-movie.svg" alt="Movie">
+				</div> <!-- cd-timeline__img -->
+
+				<div id ="chapter2"  class="cd-timeline__content js-cd-content">
+					<h2>Title of section 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+					<a href="#0" class="cd-timeline__read-more">Read more</a>
+					<span class="cd-timeline__date">Jan 18</span>
+				</div> <!-- cd-timeline__content -->
+			</div> <!-- cd-timeline__block -->
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+					<img src="img/cd-icon-picture.svg" alt="Picture">
+				</div> <!-- cd-timeline__img -->
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>Title of section 3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+					<a href="#0" class="cd-timeline__read-more">Read more</a>
+					<span class="cd-timeline__date">Jan 24</span>
+				</div> <!-- cd-timeline__content -->
+			</div> <!-- cd-timeline__block -->
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+					<img src="img/cd-icon-location.svg" alt="Location">
+				</div> <!-- cd-timeline__img -->
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>Title of section 4</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+					<a href="#0" class="cd-timeline__read-more">Read more</a>
+					<span class="cd-timeline__date">Feb 14</span>
+				</div> <!-- cd-timeline__content -->
+			</div> <!-- cd-timeline__block -->
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+					<img src="img/cd-icon-location.svg" alt="Location">
+				</div> <!-- cd-timeline__img -->
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>Title of section 5</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+					<a href="#0" class="cd-timeline__read-more">Read more</a>
+					<span class="cd-timeline__date">Feb 18</span>
+				</div> <!-- cd-timeline__content -->
+			</div> <!-- cd-timeline__block -->
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+					<img src="img/cd-icon-movie.svg" alt="Movie">
+				</div> <!-- cd-timeline__img -->
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>Final Section</h2>
+					<p>This is the content of the last section</p>
+					<span class="cd-timeline__date">Feb 26</span>
+				</div> <!-- cd-timeline__content -->
+			</div> <!-- cd-timeline__block -->
+		</div>
+	</section> <!-- cd-timeline -->
+	
+<script src="js/main.js"></script> <!-- Resource JavaScript -->
+</body>
 
     <script>
       // When the user scrolls the page, execute myFunction
@@ -192,47 +126,12 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById('myBar').style.width = scrolled + '%';
 
-        var header = document
-          .getElementsByClassName('header')[0]
-          .getBoundingClientRect();
-        console.log(header);
         var chap1 = document.getElementById('chapter1');
-        var chap1rect = chap1.getBoundingClientRect();
         var chap2 = document.getElementById('chapter2');
-        var chap2rect = chap2.getBoundingClientRect();
         var chap3 = document.getElementById('chapter3');
-        var chap3rect = chap3.getBoundingClientRect();
         var chap4 = document.getElementById('chapter4');
-        var chap4rect = chap4.getBoundingClientRect();
         var chap5 = document.getElementById('chapter5');
-        var chap5rect = chap5.getBoundingClientRect();
 
-        if (chap1rect.top <= header.bottom) {
-          document.getElementById('chap1').style.color = 'green';
-        } else {
-          document.getElementById('chap1').style.color = 'black';
-        }
-        if (chap2rect.top <= header.bottom) {
-          document.getElementById('chap2').style.color = 'green';
-        } else {
-          document.getElementById('chap2').style.color = 'black';
-        }
-        if (chap3rect.top <= header.bottom) {
-          document.getElementById('chap3').style.color = 'green';
-        } else {
-          document.getElementById('chap3').style.color = 'black';
-        }
-        if (chap4rect.top <= header.bottom) {
-          document.getElementById('chap4').style.color = 'green';
-        } else {
-          document.getElementById('chap4').style.color = 'black';
-        }
-        if (chap5rect.top <= header.bottom) {
-          document.getElementById('chap5').style.color = 'green';
-        } else {
-          document.getElementById('chap5').style.color = 'black';
-        }
       }
     </script>
-  </body>
 </html>
