@@ -207,20 +207,30 @@
         var chap5 = document.getElementById('chapter5');
         var chap5rect = chap5.getBoundingClientRect();
 
-        if (chap1rect.top < header.bottom) {
+        if (chap1rect.top <= header.bottom) {
           document.getElementById('chap1').style.color = 'green';
+        } else {
+          document.getElementById('chap1').style.color = 'black';
         }
-        if (chap2rect.top < header.bottom) {
+        if (chap2rect.top <= header.bottom) {
           document.getElementById('chap2').style.color = 'green';
+        } else {
+          document.getElementById('chap2').style.color = 'black';
         }
-        if (chap3rect.top < header.bottom) {
+        if (chap3rect.top <= header.bottom) {
           document.getElementById('chap3').style.color = 'green';
+        } else {
+          document.getElementById('chap3').style.color = 'black';
         }
-        if (chap4rect.top < header.bottom) {
+        if (chap4rect.top <= header.bottom) {
           document.getElementById('chap4').style.color = 'green';
+        } else {
+          document.getElementById('chap4').style.color = 'black';
         }
-        if (chap5rect.top < header.bottom) {
+        if (chap5rect.top <= header.bottom) {
           document.getElementById('chap5').style.color = 'green';
+        } else {
+          document.getElementById('chap5').style.color = 'black';
         }
       }
     </script>
