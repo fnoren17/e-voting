@@ -2,47 +2,18 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        margin: 0;
-        font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .header {
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-        background-color: #f1f1f1;
-      }
-
-      .header h2 {
-        text-align: center;
-      }
-
-      .progress-container {
-        width: 100%;
-        height: 8px;
-        background: #ccc;
-      }
-
-      .progress-bar {
-        height: 8px;
-        background: #4caf50;
-        width: 0%;
-      }
-
-      .content {
-        padding: 100px 0;
-        margin: 50px auto 0 auto;
-        width: 80%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
       <h2>Scroll Indicator</h2>
+      <div class="chapter-container">
+        <div id="chap1" class="chapter">Chapter 1</div>
+        <div id="chap2" class="chapter">Chapter 2</div>
+        <div id="chap3" class="chapter">Chapter 3</div>
+        <div id="chap4" class="chapter">Chapter 4</div>
+        <div id="chap5" class="chapter">Chapter 5</div>
+      </div>
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>
@@ -59,76 +30,150 @@
         It is even <b>responsive</b>! Resize the browser window to see the
         effect.
       </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
+      <div id="chapter1">
+        <h1 class="chapter-heading">Chapter 1</h1>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+      </div>
+      <div id="chapter2">
+        <h1 class="chapter-heading">Chapter 2</h1>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+      </div>
+      <div id="chapter3">
+        <h1 class="chapter-heading">Chapter 3</h1>
+
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+      </div>
+      <div id="chapter4">
+        <h1 class="chapter-heading">Chapter 4</h1>
+
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+      </div>
+      <div id="chapter5">
+        <h1 class="chapter-heading">Chapter 5</h1>
+
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+        <p>
+          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+          definitiones no quo, maluisset concludaturque et eum, altera fabulas
+          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
+          Eum no molestiae voluptatibus.
+        </p>
+      </div>
     </div>
 
     <script>
@@ -143,8 +188,40 @@
         var height =
           document.documentElement.scrollHeight -
           document.documentElement.clientHeight;
+        console.log(height);
         var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
+        document.getElementById('myBar').style.width = scrolled + '%';
+
+        var header = document
+          .getElementsByClassName('header')[0]
+          .getBoundingClientRect();
+        console.log(header);
+        var chap1 = document.getElementById('chapter1');
+        var chap1rect = chap1.getBoundingClientRect();
+        var chap2 = document.getElementById('chapter2');
+        var chap2rect = chap2.getBoundingClientRect();
+        var chap3 = document.getElementById('chapter3');
+        var chap3rect = chap3.getBoundingClientRect();
+        var chap4 = document.getElementById('chapter4');
+        var chap4rect = chap4.getBoundingClientRect();
+        var chap5 = document.getElementById('chapter5');
+        var chap5rect = chap5.getBoundingClientRect();
+
+        if (chap1rect.top < header.bottom) {
+          document.getElementById('chap1').style.color = 'green';
+        }
+        if (chap2rect.top < header.bottom) {
+          document.getElementById('chap2').style.color = 'green';
+        }
+        if (chap3rect.top < header.bottom) {
+          document.getElementById('chap3').style.color = 'green';
+        }
+        if (chap4rect.top < header.bottom) {
+          document.getElementById('chap4').style.color = 'green';
+        }
+        if (chap5rect.top < header.bottom) {
+          document.getElementById('chap5').style.color = 'green';
+        }
       }
     </script>
   </body>
