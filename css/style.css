@@ -10,19 +10,31 @@
   width: 0%;
 }
 .content {
-  padding: 10px 0;
+  padding: 5px 0;
   margin: 5px auto 0 auto;
   width: 80%;
 }
+
 .chapter-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-around;
+  padding: 12px;
 }
 
 .chapter {
   color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Open Sans Regular",arial,sans-serif;
+  font-weight: normal;
+}
+
+.header {
+  position: fixed;
+  top: 85px;
+  z-index: 1;
+  width: 100%;
+  background-color: #0b7eb5;
 }
 
 /* -------------------------------- 
@@ -37,14 +49,18 @@ Primary style
 
 html {
   font-size: 62.5%;
+  font-family: "Open Sans Regular",arial,sans-serif;
+  font-weight: normal;
+  color: #515151;
 }
 
 body {
   padding-top: 10px;
   font-size: 1.6rem;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
+  font-family: "Open Sans Regular",arial,sans-serif;
+  font-weight: normal;
+  color: #515151;
+  background-color: #eee;
 }
 
 header {
@@ -52,6 +68,8 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+  padding: 10px;
+  background-color: #eee;
 }
 
 a {
@@ -65,7 +83,7 @@ img {
 
 h1, h2 {
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 /* -------------------------------- 
@@ -84,20 +102,18 @@ Patterns - reusable parts of our design
 Vertical Timeline - by CodyHouse.co
 
 -------------------------------- */
-header {
-  /*height: 200px;
-  line-height: 2px;*/
-  text-align: center;
-  background: #303e49;
-}
 
 header h1 {
-  color: white;
-  font-size: 1.8rem;
+  color: #515151;
+  font-size: 2.6rem;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
 .cd-timeline {
+  padding-top: 72px;
   overflow: hidden;
   margin: 2em auto;
 }
@@ -118,7 +134,7 @@ header h1 {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: #6dcff6;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -181,7 +197,7 @@ header h1 {
 }
 
 .cd-timeline__img.cd-timeline__img--picture {
-  background: #75ce66;
+  background: #58a21d;
 }
 
 .cd-timeline__img.cd-timeline__img--movie {
@@ -273,18 +289,18 @@ header h1 {
 }
 
 .cd-timeline__content h2 {
-  color: #303e49;
+  color: #515151;
 }
 
 .cd-timeline__content p,
 .cd-timeline__read-more,
 .cd-timeline__date {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .cd-timeline__content p {
   margin: 1em 0;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .cd-timeline__read-more,
