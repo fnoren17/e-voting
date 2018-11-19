@@ -40,7 +40,7 @@
 				</div> <!-- cd-timeline__img -->
 
 				<div class="cd-timeline__content js-cd-content">
-					<h2 id ="chapter1" >Ta valkuvert och valsedlar</h2>
+					<h2 id ="chapter1">Ta valkuvert och valsedlar</h2>
 					<p>
 					Vid ingången till vallokalen brukar det finnas bord där valsedlarna har lagts ut. Genom att ta valsedlar för flera partier kan du undvika att någon får reda på vad du tänker rösta på.Vid ingången till vallokalen står oftast en röstmottagare som delar ut valkuvert och hänvisar dig och övriga väljare till en ledig valskärm.</p>
 					<a href="#0" class="cd-timeline__read-more">Read more</a>
@@ -79,6 +79,35 @@
 				</div> <!-- cd-timeline__block -->
 			</div>
 
+
+		<!-- LEFT SIDE -->
+		<div class="cd-timeline__block js-cd-block">
+			<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline__img -->
+
+			<div class="cd-timeline__content js-cd-content">
+				<h2 id ="chapter4" >Title of section 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-timeline__read-more">Read more</a>
+			</div> <!-- cd-timeline__content -->
+		</div> <!-- cd-timeline__block -->
+
+
+		<!-- LEFT SIDE -->
+		<div class="cd-timeline__block js-cd-block">
+			<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline__img -->
+
+			<div class="cd-timeline__content js-cd-content">
+				<h2 id ="chapter5" >Title of section 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-timeline__read-more">Read more</a>
+			</div> <!-- cd-timeline__content -->
+		</div> <!-- cd-timeline__block -->
+
+
 		</div> <!-- cd-timeline__container -->
 	</section> <!-- cd-timeline -->
 	
@@ -101,11 +130,45 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById('myBar').style.width = scrolled + '%';
 
+var header = document
+          .getElementsByClassName('header')[0]
+          .getBoundingClientRect();
+        console.log(header);
         var chap1 = document.getElementById('chapter1');
+        var chap1rect = chap1.getBoundingClientRect();
         var chap2 = document.getElementById('chapter2');
+        var chap2rect = chap2.getBoundingClientRect();
         var chap3 = document.getElementById('chapter3');
+        var chap3rect = chap3.getBoundingClientRect();
         var chap4 = document.getElementById('chapter4');
+        var chap4rect = chap4.getBoundingClientRect();
         var chap5 = document.getElementById('chapter5');
+        var chap5rect = chap5.getBoundingClientRect();
+        if (chap1rect.top <= header.bottom) {
+          document.getElementById('chap1').style.color = '#ccc';
+        } else {
+          document.getElementById('chap1').style.color = 'white';
+        }
+        if (chap2rect.top <= header.bottom) {
+          document.getElementById('chap2').style.color = '#ccc';
+        } else {
+          document.getElementById('chap2').style.color = 'white';
+        }
+        if (chap3rect.top <= header.bottom) {
+          document.getElementById('chap3').style.color = '#ccc';
+        } else {
+          document.getElementById('chap3').style.color = 'white';
+        }
+        if (chap4rect.top <= header.bottom) {
+          document.getElementById('chap4').style.color = '#ccc';
+        } else {
+          document.getElementById('chap4').style.color = 'white';
+        }
+        if (chap5rect.top <= header.bottom) {
+          document.getElementById('chap5').style.color = '#ccc';
+        } else {
+          document.getElementById('chap5').style.color = 'white';
+        }
 
       }
     </script>
