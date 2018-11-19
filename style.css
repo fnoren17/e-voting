@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  padding-top: 10px;
+  margin-top: 10px;
   font-size: 1.6rem;
   font-family: "Droid Serif", serif;
   color: #7f8c97;
@@ -348,6 +348,7 @@ header h1 {
     top: 6px;
     font-size: 1.6rem;
   }
+  
   .cd-timeline__block:nth-child(even) .cd-timeline__content {
     float: right;
   }
@@ -372,6 +373,7 @@ header h1 {
             animation: cd-bounce-2 0.6s;
   }
 }
+
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
