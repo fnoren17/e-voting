@@ -31,7 +31,7 @@
 
 .header {
   position: fixed;
-  top: 85px;
+  top: 65px;
   z-index: 1;
   width: 100%;
   background-color: #0b7eb5;
@@ -68,7 +68,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  padding: 10px;
+  padding: 0px;
   background-color: #eee;
 }
 
@@ -111,9 +111,14 @@ header h1 {
   padding-bottom: 20px;
 }
 
+.headertitle {
+  width: 90%;
+  margin: auto;
+}
+
 
 .cd-timeline {
-  padding-top: 72px;
+  padding-top: 59px;
   overflow: hidden;
   margin: 2em auto;
 }
