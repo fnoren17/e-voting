@@ -37,6 +37,18 @@
   background-color: #0b7eb5;
 }
 
+.rubriker {
+  width: 100%;
+}
+
+.rubrik {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+}
+
 /* -------------------------------- 
 
 Primary style
@@ -106,7 +118,6 @@ Vertical Timeline - by CodyHouse.co
 header h1 {
   color: #515151;
   font-size: 2.6rem;
-  padding-left: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -126,7 +137,6 @@ header h1 {
 .cd-timeline__container {
   position: relative;
   width: 90%;
-  max-width: 870px;
   margin: 0 auto;
   padding: 2em 0;
 }
