@@ -1,3 +1,4 @@
+/*
 (function(){
     // Vertical Timeline - by CodyHouse.co
 	function VerticalTimeline( element ) {
@@ -68,4 +69,4 @@
 		});
 		scrolling = false;
 	};
-})();
+})(); */
