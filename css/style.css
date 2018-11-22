@@ -91,7 +91,7 @@ h1, h2 {
 Patterns - reusable parts of our design
 
 -------------------------------- */
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 870px) {
   .cd-is-hidden {
     visibility: hidden;
   }
@@ -126,7 +126,7 @@ header h1 {
 .cd-timeline__container {
   position: relative;
   width: 90%;
-  max-width: 1170px;
+  max-width: 870px;
   margin: 0 auto;
   padding: 2em 0;
 }
@@ -142,7 +142,7 @@ header h1 {
   background: #6dcff6;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 870px) {
   .cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -173,7 +173,7 @@ header h1 {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 970px) {
   .cd-timeline__block {
     margin: 4em 0;
   }
@@ -213,7 +213,7 @@ header h1 {
   background: #f0ca45;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 970px) {
   .cd-timeline__img {
     width: 60px;
     height: 60px;
@@ -270,8 +270,6 @@ header h1 {
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  -webkit-box-shadow: 0 3px 0 #d7e4ed;
-          box-shadow: 0 3px 0 #d7e4ed;
 }
 
 .cd-timeline__content:after {
@@ -333,8 +331,6 @@ header h1 {
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  -webkit-box-shadow: 0 3px 0 #d7e4ed;
-          box-shadow: 0 3px 0 #d7e4ed;
 }
 
 .cd-timeline__date::before {
@@ -362,7 +358,7 @@ header h1 {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 870px) {
   .cd-timeline__content {
     margin-left: 0;
     padding: 1.6em;
@@ -412,7 +408,7 @@ header h1 {
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 870px) {
   /* inverse bounce effect on even content blocks */
   .right .cd-timeline__block .cd-timeline__content.cd-timeline__content--bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
