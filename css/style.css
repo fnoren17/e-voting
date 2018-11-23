@@ -43,6 +43,15 @@ body {
   font-size: 1.2rem;
 }
 
+.sticky {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+.sticky + .row {
+  padding-top: 80px;
+}
 /* Column container */
 .toprow {  
     display: flex;

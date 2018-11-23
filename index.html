@@ -14,16 +14,18 @@
 </div>
 
 <!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#chapter1"><div id="chap1" class="chapter">Image 1</div></a>
-  <a href="#chapter2"><div id="chap2" class="chapter">Image 2</div></a>
-  <a href="#chapter3"><div id="chap3" class="chapter">Image 3</div></a>
-  </div>
+<div id="stickybar">
+	<div class="navbar">
+	  <a href="#chapter1"><div id="chap1" class="chapter">Image 1</div></a>
+	  <a href="#chapter2"><div id="chap2" class="chapter">Image 2</div></a>
+	  <a href="#chapter3"><div id="chap3" class="chapter">Image 3</div></a>
+	  </div>
 
-<!-- The flexible grid (content) -->
-<div class="toprow">
-	<div class="halfwidth">Paper voting</div>
-	<div class="halfwidth">Electronic voting</div>
+	<!-- The flexible grid (content) -->
+	<div class="toprow">
+		<div class="halfwidth">Paper voting</div>
+		<div class="halfwidth">Electronic voting</div>
+	</div>
 </div>
 
 <div id ="chapter1" class="row">
@@ -108,7 +110,7 @@
         var scrolled = (winScroll / height) * 100;
 
 
-var header = document
+		var header = document
           .getElementsByClassName('header')[0]
           .getBoundingClientRect();
         console.log(header);
@@ -135,6 +137,19 @@ var header = document
         }
 
       }
+
+      window.onscroll = function() {stickyMenu()};
+
+		var stickybar = document.getElementById("stickybar");
+		var sticky = stickybar.offsetTop;
+
+		function stickyMenu() {
+		  if (window.pageYOffset >= sticky) {
+		    stickybar.classList.add("sticky");
+		  } else {
+		    stickybar.classList.remove("sticky");
+		  }
+		}
     </script>
 </html>
 
