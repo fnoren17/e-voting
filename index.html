@@ -1,149 +1,94 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-  	
-	<title>E-voting Explanation System</title>
+  <title>E-voting Explanation System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-	<header>
-		<div class="headertitle">
-	      <h1>E-voting Explanation System</h1>
-	  	</div>
-	</header>
 
-	<div class="header">
-		<div class="chapter-container">
-		    <a href="#chapter1"><div id="chap1" class="chapter">Chapter 1</div></a>
-		    <a href="#chapter2"><div id="chap2" class="chapter">Chapter 2</div></a>
-		    <a href="#chapter3"><div id="chap3" class="chapter">Chapter 3</div></a>
-		    <a href="#chapter4"><div id="chap4" class="chapter">Chapter 4</div></a>
-		    <a href="#chapter5"><div id="chap5" class="chapter">Chapter 5</div></a>
-		    <a href="#chapter6"><div id="chap6" class="chapter">Chapter 6</div></a>
-		</div>
-		<!--
-		<div class="progress-container">
-			<div class="progress-bar" id="myBar"></div>
-		</div>
-		-->
-		<div class="rubriker">
-			<div class="rubrik">Paper voting</div>
-			<div class="rubrik">Electronic voting</div>
-		</div>
-	</div>
+<!-- Header -->
+<div class="header">
+  <h1>E-Voting Explanation System</h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div>
 
-	<!-- Container för rutor -->
-	<section class="cd-timeline js-cd-timeline">
-		<div class="cd-timeline__container">
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#chapter1"><div id="chap1" class="chapter">Chapter 1</div></a>
+  <a href="#chapter2"><div id="chap2" class="chapter">Chapter 2</div></a>
+  <a href="#chapter3"><div id="chap3" class="chapter">Chapter 3</div></a>
+  </div>
 
-			<!-- BOTH SIDES -->
-			<div id ="chapter1" class="cd-timeline__block">
-				<div class="cd-timeline__img right">
-					<img src="img/ballot.png" alt="Picture">
-				</div> <!-- cd-timeline__img -->
+<!-- The flexible grid (content) -->
+<div id ="chapter1" class="row">
+  <div class="side">
+      <div class="votingitem">
+        <h2>Electoral rolls in paper voting</h2>
+        <p>
+        In the Swedish voting system, all eligible voters receives a voting card by mail before the election day. The voting card comtains the adress to your polling station, contact information if you have any questions and your number in the electoral roll. At the polling station, the voting card and an ID is necessary. </p>
+      </div>
+  </div>
+  <div class="main">
+      <div class="imgitem">
+        <img src="img/ballot.png" alt="Picture">
+      </div>
+  </div>
+  <div class="side">
+      <div class="votingitem">
+        <h2>Electoral rolls in e-voting</h2>
+        <p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
+      </div>
+  </div>
+</div>
+<div id ="chapter2" class="row">
+  <div class="side">
+      <div class="votingitem">
+        <h2>The steps of paper voting</h2>
+        <p>
+        Voter choose a ballot paper, then put the ballot papers into envelopes. The envelopes are placed in the ballot box by the , so that people could not see others' votes or easily add or remove ballot papers.</p>
+      </div>
+  </div>
+  <div class="main">
+      <div class="imgitem">
+        <img src="img/ballot.png" alt="Picture">
+      </div>
+  </div>
+  <div class="side">
+      <div class="votingitem">
+        <h2>The steps of electronic voting</h2>
+        <p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
+      </div>
+  </div>
+</div>
+<div id ="chapter3" class="row">
+  <div class="side">
+      <div class="votingitem">
+        
+      </div>
+  </div>
+  <div class="main">
+      <div class="imgitem">
+        <img src="img/ballot.png" alt="Picture">
+      </div>
+  </div>
+  <div class="side">
+      <div class="votingitem">
+        <h2>Electoral rolls in e-voting</h2>
+        <p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
+      </div>
+  </div>
+</div>
 
-				<div class="cd-timeline-papervoting">
-					<h2>Electoral rolls in paper voting</h2>
-					<p>
-					In the Swedish voting system, all eligible voters receives a voting card by mail before the election day. The voting card comtains the adress to your polling station, contact information if you have any questions and your number in the electoral roll. At the polling station, the voting card and an ID is necessary. </p>
-					<!--<a href="#0" class="cd-timeline__read-more">Read more</a>-->
-				</div>
-				<div class="cd-timeline-evoting">
-					<h2>Electoral rolls in e-voting</h2>
-					<p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
-				</div>
-				 <!-- cd-timeline-papervoting -->
-			</div> <!-- cd-timeline__block -->
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
-			<!-- BOTH SIDES -->
-			<div id ="chapter2" class="cd-timeline__block">
-				<div class="cd-timeline__img  right">
-					<img src="img/ballot.png" alt="Picture">
-				</div> <!-- cd-timeline__img -->
-
-				<div class="cd-timeline-papervoting">
-					<h2>The steps of paper voting</h2>
-					<p>
-					Voter choose a ballot paper, then put the ballot papers into envelopes. The envelopes are placed in the ballot box by the , so that people could not see others' votes or easily add or remove ballot papers.</p>
-					<!--<a href="#0" class="cd-timeline__read-more">Read more</a>-->
-				</div> <!-- cd-timeline-papervoting -->
-				<div class="cd-timeline-evoting">
-					<h2>The steps of electronic voting</h2>
-					<p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
-				</div>
-			</div> <!-- cd-timeline__block -->
-
-
-			<!-- LEFT SIDE -->
-			<div id ="chapter3" class="cd-timeline__block">
-				<div class="cd-timeline__img">
-					<img src="img/cd-icon-picture.svg" alt="Picture">
-				</div> <!-- cd-timeline__img -->
-
-				<div class="cd-timeline-papervoting">
-					<h2>Title of section 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-					<a href="#0" class="cd-timeline__read-more">Read more</a>
-				</div> <!-- cd-timeline-papervoting -->
-			</div> <!-- cd-timeline__block -->
-
-			<!-- RIGHT SIDE -->
-			<div id="chapter4" class="cd-timeline__block right">
-				<div class="cd-timeline__img">
-					<img src="img/cd-icon-picture.svg" alt="Picture">
-				</div> <!-- cd-timeline__img -->
-
-				<div class="cd-timeline-evoting">
-					<h2>RIGHT</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-					<a href="#0" class="cd-timeline__read-more">Read more</a>
-				</div> <!-- cd-timeline-papervoting -->
-			</div> <!-- cd-timeline__block -->
-
-
-		<!-- LEFT SIDE -->
-		<div id ="chapter5" class="cd-timeline__block">
-			<div class="cd-timeline__img">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline__img -->
-
-			<div class="cd-timeline-papervoting">
-				<h2>Title of section 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-timeline__read-more">Read more</a>
-			</div> <!-- cd-timeline-papervoting -->
-		</div> <!-- cd-timeline__block -->
-
-
-		<!-- LEFT SIDE -->
-		<div id ="chapter6" class="cd-timeline__block">
-			<div class="cd-timeline__img">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline__img -->
-
-			<div class="cd-timeline-papervoting">
-				<h2>Title of section 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-timeline__read-more">Read more</a>
-			</div> <!-- cd-timeline-papervoting -->
-		</div> <!-- cd-timeline__block -->
-
-
-		</div> <!-- cd-timeline__container -->
-	</section> <!-- cd-timeline -->
-
-	<!-- <div class="js-cd-content"></div>-->
-	
-<script src="js/main.js"></script> <!-- Resource JavaScript -->
 </body>
 
-    <script>
+<script>
       // When the user scrolls the page, execute myFunction
       window.onscroll = function() {
         myFunction();
@@ -169,12 +114,6 @@ var header = document
         var chap2rect = chap2.getBoundingClientRect();
         var chap3 = document.getElementById('chapter3');
         var chap3rect = chap3.getBoundingClientRect();
-        var chap4 = document.getElementById('chapter4');
-        var chap4rect = chap4.getBoundingClientRect();
-        var chap5 = document.getElementById('chapter5');
-        var chap5rect = chap5.getBoundingClientRect();
-        var chap6 = document.getElementById('chapter6');
-        var chap6rect = chap6.getBoundingClientRect();
         if (chap1rect.top <= header.bottom) {
           document.getElementById('chap1').style.color = '#ccc';
         } else {
@@ -190,22 +129,8 @@ var header = document
         } else {
           document.getElementById('chap3').style.color = 'white';
         }
-        if (chap4rect.top <= header.bottom) {
-          document.getElementById('chap4').style.color = '#ccc';
-        } else {
-          document.getElementById('chap4').style.color = 'white';
-        }
-        if (chap5rect.top <= header.bottom) {
-          document.getElementById('chap5').style.color = '#ccc';
-        } else {
-          document.getElementById('chap5').style.color = 'white';
-        }
-        if (chap6rect.top <= header.bottom) {
-          document.getElementById('chap6').style.color = '#ccc';
-        } else {
-          document.getElementById('chap6').style.color = 'white';
-        }
 
       }
     </script>
 </html>
+

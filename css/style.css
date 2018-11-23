@@ -1,339 +1,106 @@
-
-.content {
-  padding: 5px 0;
-  margin: 5px auto 0 auto;
-  width: 80%;
+* {
+    box-sizing: border-box;
 }
 
-.chapter-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 12px;
-}
-
-.chapter {
-  color: #FFFFFF;
-  font-size: 20px;
-  font-family: "Open Sans Regular",arial,sans-serif;
-  font-weight: normal;
-}
-
-.header {
-  position: fixed;
-  top: 65px;
-  z-index: 1;
-  width: 100%;
-  background-color: #0b7eb5;
-}
-
-.rubriker {
-  width: 100%;
-}
-
-.rubrik {
-  width: 50%;
-  float: left;
-  padding: 5px;
-  color: #fff;
-  text-align: center;
-}
-
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Open Sans Regular",arial,sans-serif;
-  font-weight: normal;
-  color: #515151;
-}
-
+/* Style the body */
 body {
-  padding-top: 10px;
-  font-size: 1.6rem;
-  font-family: "Open Sans Regular",arial,sans-serif;
-  font-weight: normal;
-  color: #515151;
-  background-color: #eee;
+    font-family: Arial;
+    margin: 0;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  padding: 0px;
-  background-color: #eee;
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
 }
 
-a {
-  color: #acb7c0;
-  text-decoration: none;
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
 }
 
-img {
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: none;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 45%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 5%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.main .imgitem {
   max-width: 100%;
-}
-
-h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-}
-
-div {
-  display: inline-block;
-}
-
-/* -------------------------------- 
-
-Patterns - reusable parts of our design
-
--------------------------------- */
-@media only screen and (min-width: 870px) {
-  .cd-is-hidden {
-    visibility: hidden;
-  }
-}
-
-/* -------------------------------- 
-
-Vertical Timeline - by CodyHouse.co
-
--------------------------------- */
-
-header h1 {
-  color: #515151;
-  font-size: 2.6rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.headertitle {
-  width: 90%;
-  margin: auto;
-}
-
-
-.cd-timeline {
-  padding-top: 59px;
-  overflow: hidden;
-  margin: 2em auto;
-}
-
-.cd-timeline__container {
-  position: relative;
-  width: 90%;
-  margin: 2px auto;
-  padding: 2em 0;
-}
-
-.cd-timeline__container::before {
-  /* this is the vertical line */
-  content: '';
   position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 4px;
-  background: #ddd;
-}
-
-@media only screen and (min-width: 870px) {
-  .cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: 80px;
-  }
-  .cd-timeline__container::before {
-    left: 50%;
-    margin-left: -2px;
-  }
-}
-
-.cd-timeline__block {
-  position: relative;
-  margin: 2em 0;
-}
-
-.cd-timeline__block:after {
-  /* clearfix */
-  content: "";
-  display: table;
-  clear: both; 
-}
-
-.cd-timeline__block:first-child {
-  margin-top: 0;
-}
-
-.cd-timeline__block:last-child {
-  margin-bottom: 0;
-}
-
-@media only screen and (min-width: 870px) {
-  .cd-timeline__block {
-    margin: 4em 0;
-  }
-}
-
-.cd-timeline__img {
   background-color: #0b7eb5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 4px white;
           box-shadow: 0 0 0 4px white;
 }
 
-.cd-timeline__img img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+.imgitem img {
+display: block;
+width: 24px;
+height: 24px;
+position: relative;
+left: 50%;
+top: 50%;
+margin-left: -12px;
+margin-top: -12px;
 }
 
-
-@media only screen and (min-width: 870px) {
-  .cd-timeline__img {
-    width: 60px;
-    height: 60px;
-    left: 50%;
-    margin-left: -30px;
-  }
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
 }
 
-
-.cd-timeline-papervoting {
-  position: relative;
-  margin-left: 60px;
-  background: white;
-  border-radius: 0.25em;
-  padding: 1em;
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
 }
 
-
-.cd-timeline-papervoting:after, .cd-timeline-evoting:after {
-  /* clearfix */
-  content: "";
-  display: inline-block;
-  clear: none;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
 }
-
-.cd-timeline-papervoting::before {
-  /* triangle next to content block */
-  content: '';
-  position: absolute;
-  top: 16px;
-  right: 0%;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid white;
-}
-
-.cd-timeline-papervoting h2, .cd-timeline-evoting h2 {
-  color: #515151;
-}
-
-.cd-timeline-papervoting p,
-.cd-timeline__read-more,
-.cd-timeline-evoting p {
-  font-size: 1.6rem;
-}
-
-.cd-timeline-papervoting p, .cd-timeline-evoting p {
-  margin: 1em 0;
-  line-height: 1.5;
-}
-
-.cd-timeline__read-more{
-  display: inline-block;
-}
-
-.cd-timeline__read-more {
-  float: right;
-  padding: .8em 1em;
-  background: #acb7c0;
-  color: white;
-  border-radius: 0.25em;
-}
-
-.cd-timeline__read-more:hover {
-  background-color: #bac4cb;
-}
-
-.cd-timeline-evoting {
-  padding: .8em 0;
-  position: relative;
-  margin-left: 0px;
-  background: white;
-  border-radius: 0.25em;
-  padding: 1em;
-}
-
-.cd-timeline-evoting::before {
-  /* triangle next to content block */
-  content: '';
-  position: absolute;
-  top: 24px;
-  right: 100%;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid white;
-}
-
-@media only screen and (min-width: 768px) {
-  .cd-timeline-papervoting h2, .cd-timeline-evoting h2 {
-    font-size: 2rem;
-  }
-  .cd-timeline-papervoting p, .cd-timeline-evoting p {
-    font-size: 1.6rem;
-  }
-  .cd-timeline__read-more{
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (min-width: 870px) {
-  .cd-timeline-papervoting, .cd-timeline-evoting {
-    margin-left: 0;
-    padding: 1.6em;
-    width: 45%;
-  }
-  .cd-timeline-papervoting::before {
-    top: 24px;
-    left: 100%;
-    border-color: transparent;
-    border-left-color: white;
-  }
-  .cd-timeline__read-more {
-    float: left;
-  }
-  
-  .cd-timeline-evoting {
-    position: relative;
-    width: 45%;
-    left: 120px;
-    top: -45px;
-    font-size: 1.6rem;
-  }
-  
-  
-}
-
