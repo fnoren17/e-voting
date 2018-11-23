@@ -1,181 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <h2>Scroll Indicator</h2>
-      <div class="chapter-container">
-        <div id="chap1" class="chapter">Chapter 1</div>
-        <div id="chap2" class="chapter">Chapter 2</div>
-        <div id="chap3" class="chapter">Chapter 3</div>
-        <div id="chap4" class="chapter">Chapter 4</div>
-        <div id="chap5" class="chapter">Chapter 5</div>
-      </div>
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-    </div>
+<head>
+  <title>E-voting Explanation System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
 
-    <div class="content">
-      <h3>Scroll Down to See The Effect</h3>
-      <p>
-        We have created a "progress bar" to
-        <b>show how far a page has been scrolled</b>.
-      </p>
-      <p>It also <b>works when you scroll back up</b>.</p>
-      <p>
-        It is even <b>responsive</b>! Resize the browser window to see the
-        effect.
-      </p>
-      <div id="chapter1">
-        <h1 class="chapter-heading">Chapter 1</h1>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter2">
-        <h1 class="chapter-heading">Chapter 2</h1>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter3">
-        <h1 class="chapter-heading">Chapter 3</h1>
+<!-- Header -->
+<div class="header">
+  <h1>E-Voting Explanation System</h1>
+  <span>With a <b>flexible</b> layout.</span>
+</div>
 
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-      <div id="chapter4">
-        <h1 class="chapter-heading">Chapter 4</h1>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#chapter1"><div id="chap1" class="chapter">Chapter 1</div></a>
+  <a href="#chapter2"><div id="chap2" class="chapter">Chapter 2</div></a>
+  <a href="#chapter3"><div id="chap3" class="chapter">Chapter 3</div></a>
+  </div>
 
+<!-- The flexible grid (content) -->
+<div id="chapter1" class="row">
+  <div class="side">
+      <div class="votingitem">
+        <h2>Electoral rolls in paper voting</h2>
         <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
+        In the Swedish voting system, all eligible voters receives a voting card by mail before the election day. The voting card comtains the adress to your polling station, contact information if you have any questions and your number in the electoral roll. At the polling station, the voting card and an ID is necessary. </p>
       </div>
-      <div id="chapter5">
-        <h1 class="chapter-heading">Chapter 5</h1>
+  </div>
+  <div class="main">
+      <div class="imgitem">
+        <img src="img/ballot.png" alt="Picture">
+      </div>
+  </div>
+  <div class="side">
+      <div class="votingitem">
+        <h2>Electoral rolls in e-voting</h2>
+        <p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
+      </div>
+  </div>
+</div>
+<div id ="chapter2" class="row">
+  <div class="side">
+      <div class="votingitem">
+        <h2>The steps of paper voting</h2>
+        <p>
+        Voter choose a ballot paper, then put the ballot papers into envelopes. The envelopes are placed in the ballot box by the , so that people could not see others' votes or easily add or remove ballot papers.</p>
+      </div>
+  </div>
+  <div class="main">
+      <div class="imgitem">
+        <img src="img/ballot.png" alt="Picture">
+      </div>
+  </div>
+  <div class="side">
+      <div class="votingitem">
+        <h2>The steps of electronic voting</h2>
+        <p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
+      </div>
+  </div>
+</div>
+<div id ="chapter3" class="row">
+  <div class="side">
+      <div class="votingitem">
+        
+      </div>
+  </div>
+  <div class="main">
+      <div class="imgitem">
+        <img src="img/ballot.png" alt="Picture">
+      </div>
+  </div>
+  <div class="side">
+      <div class="votingitem">
+        <h2>Electoral rolls in e-voting</h2>
+        <p>Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote.</p>
+      </div>
+  </div>
+</div>
 
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-        <p>
-          Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-          definitiones no quo, maluisset concludaturque et eum, altera fabulas
-          ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-          Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-          Eum no molestiae voluptatibus.
-        </p>
-      </div>
-    </div>
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer, not sure we needa footer</h2>
+</div>
 
     <script type="text/javascript" src="js/scrollCtrl.js"></script>
   </body>
 </html>
+
