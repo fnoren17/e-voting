@@ -33,9 +33,14 @@ body {
 /* Style the navigation bar links */
 .navbar a {
     color: white;
-    padding: 14px 20px;
+    padding: 14px 70px;
     text-decoration: none;
     text-align: center;
+    flex-grow: 1;
+}
+
+.navbar a:hover {
+  background-color: #059ada;
 }
 
 .chapter {
@@ -133,7 +138,11 @@ margin-top: -12px;
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #eee;
+}
+
+.footer h2 {
+  font-weight: lighter;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
