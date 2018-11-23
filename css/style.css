@@ -88,6 +88,10 @@ h1, h2 {
   font-weight: normal;
 }
 
+div {
+  display: inline-block;
+}
+
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
@@ -127,7 +131,7 @@ header h1 {
 .cd-timeline__container {
   position: relative;
   width: 90%;
-  margin: 0 auto;
+  margin: 2px auto;
   padding: 2em 0;
 }
 
@@ -146,6 +150,7 @@ header h1 {
   .cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
+    margin-left: 80px;
   }
   .cd-timeline__container::before {
     left: 50%;
@@ -221,13 +226,13 @@ header h1 {
   padding: 1em;
 }
 
-/*
+
 .cd-timeline-papervoting:after, .cd-timeline-evoting:after {
-  /* clearfix 
+  /* clearfix */
   content: "";
   display: inline-block;
   clear: none;
-}*/
+}
 
 .cd-timeline-papervoting::before {
   /* triangle next to content block */
@@ -324,8 +329,8 @@ header h1 {
   .cd-timeline-evoting {
     position: relative;
     width: 45%;
-    left: 55%;
-    top: 0px;
+    left: 120px;
+    top: -45px;
     font-size: 1.6rem;
   }
   
