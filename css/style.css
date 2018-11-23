@@ -55,7 +55,7 @@ body {
   width: 100%;
 }
 .sticky + .row {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 /* Column container */
 .toprow {  
