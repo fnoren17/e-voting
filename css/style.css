@@ -48,15 +48,21 @@ body {
   font-size: 1.2rem;
 }
 
+.chapter img {
+  max-height: 50px;
+}
+
 .sticky {
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
 }
+
 .sticky + .row {
-  padding-top: 90px;
+  padding-top: 100px;
 }
+
 /* Column container */
 .toprow {  
     display: flex;
@@ -83,12 +89,14 @@ body {
     background-color: #fff;
     padding-right: 70px;
     padding-left: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    flex: 45%;
+    flex: 40%;
     background-color: #fff;
     padding: 50px;
 }
@@ -102,8 +110,6 @@ body {
     flex: 5%;
     background-color: #fff;
     padding: 20px;
-    padding-top: 70px;
-    align-items: center;
     height: 100%;
 }
 
@@ -111,20 +117,20 @@ body {
   max-width: 100%;
   position: absolute;
   background-color: #0b7eb5;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
 .imgitem img {
 display: block;
-width: 24px;
-height: 24px;
+width: 30px;
+height: 30px;
 position: relative;
 left: 50%;
 top: 50%;
-margin-left: -12px;
-margin-top: -12px;
+margin-left: -15px;
+margin-top: -15px;
 }
 
 /* Fake image, just for this example */
