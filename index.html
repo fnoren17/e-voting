@@ -106,7 +106,7 @@
       <div class="votingitem">
         <h2>Counting the votes</h2>
         <p>
-        	To ensure 
+        	To ensure that all votes are counted correctly, the counting is done in several steps. First, at the polling station, the envelopes and the electoral roll at counted to make sure they match. Then the envelopes are checked so they only contain one ballot. If the case is not, the envelope is sent to be reviewed at the county administration. After that the ballots are counted. A second count is done at the county administration as well. 
       </div>
   </div>
   <div class="main">
@@ -116,9 +116,9 @@
   </div>
   <div class="side">
       <div class="votingitem">
-        <h2>Verifying</h2>
+        <h2>Correctness</h2>
         <p>
-        	In an electronic voting system there are scepstics to whether the vote is actually counted to the correct party. For the voter to ensure that the votes are not tampered with, the voter can <b>verify</b> the vote at all time after voting.
+        	To ensure correctness of the electronic voting system, the votes are replicated to multiple servers. In this way, if a server is hacked the votes are still safely kept. The keys, when are need for the decryption of the votes, are distributed to multiple people. The system uses zero-knowledge proof to prove its correctness. 
         </p>
       </div>
   </div>
@@ -133,7 +133,7 @@
 
 <script>
       // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {
+      window.onscroll = function() { 
         myFunction();
       };
 
@@ -148,7 +148,7 @@
 
 
 		var header = document
-          .getElementsByClassName('header')[0]
+          .getElementsByClassName('navbar')[0]
           .getBoundingClientRect();
         console.log(header);
         var chap1 = document.getElementById('chapter1');
