@@ -107,37 +107,28 @@ body {
 
 /* Main column */
 .main {
+    display: flex;
     flex: 5%;
     background-color: #fff;
     padding: 20px;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .imgitem {
-  max-width: 100%;
-  position: absolute;
+  display: flex;
   background-color: #0b7eb5;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgitem img {
-display: block;
 width: 30px;
 height: 30px;
-position: relative;
-left: 50%;
-top: 50%;
-margin-left: -15px;
-margin-top: -15px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
 }
 
 /* Footer */
