@@ -60,7 +60,7 @@
         <!--<p>
         	The envelope and the voting booth strives to ensure <b>voting privacy</b> and resist <b>coercion</b>. However, since the ballot papers are picked outside of the voting booth, others can see which ballot papers are picked. 
         </p>-->
-        <button id="myBtn">Open Modal</button>
+        <button id="myBtn">Why do we do this way?</button>
 
 		<!-- The Modal -->
 		<div id="myModal" class="modal">
@@ -68,21 +68,69 @@
 		  <!-- Modal content -->
 		  <div class="modal-content">
 		    
-		    <div class="modal-part">
-		    	<img src="img/angel.png" class="modal-img">
+		    <div class="modal-part mySlides">
+		    	<div class="third">
+		    		<h2>The Ideal Case</h2>
+		    		<p>Everyone whisper the name of the party or people he/she wants to vote for to the Angel, and the Angel annouces everyone's vote.
+		    		</p>
+		    	</div>
+		    	<div class="third">
+		    		<img src="img/angel.png" class="modal-img">
+		    	</div>
+		    	<div class="third">
+		    		<h2>Possible Attack</h2>
+		    		<p>There is noone every one trusts.</p>
+		    	</div>
 		    </div>
-		    <div class="modal-part">
-		    	<img src="img/pile.png" class="modal-img">
+		    <div class="modal-part mySlides">
+		    	<div class="third">
+		    		<h2>Observing the votes</h2>
+		    		<p>Different ballot paper stands for different party, each voter chooses a ballot paper and put it into the pile in the middle, and all the voters could see the pile as oberservers.
+		    		</p>
+		    	</div>
+		    	<div class="third">
+		    		<img src="img/pile.png" class="modal-img">
+		    	</div>
+		    	<div class="third">
+		    		<h2>Possible Attack</h2>
+		    		<p>What if ballot papers are added or removed?</p>
+		    	</div>
 		    </div>
-		    <div class="modal-part">
-		    	<img src="img/ballotbox.png" class="modal-img">
-		    </div>
-		    <div class="modal-part">
-		    	<img src="img/envelope.png" class="modal-img">
-		    </div>
-		    <span class="close"></span>
-		  </div>
+		    <div class="modal-part mySlides">
+		    	<div class="third">
+		    		<h2>The Ballot Box</h2>
+		    		<p>Voter choose a ballot paper, then put the ballot papers into the ballot box, instead of into a pile. So that people could not see others' votes or easily add or remove ballot papers.
+		    		</p>
+		    	</div>
+		    	<div class="third">
+		    		<img src="img/ballotbox.png" class="modal-img">
+		    	</div>
+		    	<div class="third">
+		    		<h2>Possible Attack</h2>
+		    		<p>What if people see my ballot before I put it in the ballot box?</p>
+		    	</div>
 
+		    </div>
+		    <div class="modal-part mySlides">
+		    	<div class="third">
+		    		<h2>The Envelope</h2>
+		    		<p>Different ballot paper stands for different party, each voter chooses a ballot paper and put it into the pile in the middle, and all the voters could see the pile as oberservers.
+		    	</div>
+		    	<div class="third">
+		    		<img src="img/envelope.png" class="modal-img">
+		    	</div>
+		    	<div class="third">
+		    		<h2>Possible Attack</h2>
+		    		<p>This is the way we do it!</p>
+		    	</div>
+			</div>
+		    
+		    <span class="close"></span>
+		    <!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  	</div>
+			
 		</div>
       </div>
   </div>
@@ -242,6 +290,29 @@
 		    if (event.target == modal) {
 		        modal.style.display = "none";
 		    }
+		}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slides[slideIndex-1].style.display = "block";
 		}
     </script>
 </html>

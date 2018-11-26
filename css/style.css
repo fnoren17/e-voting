@@ -178,11 +178,12 @@ button {
 
 /* Modal Content/Box */
 .modal-content {
+  position: relative;
     display: flex;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 10px;
-    border: 1px solid #888;
+    padding: 12px;
+    border: 0px solid #888;
     border-radius: 10px;
     width: 80%; /* Could be more or less, depending on screen size */
 }
@@ -190,19 +191,41 @@ button {
 .modal-part {
   flex-grow: 1;
   height: 300px;
+  align-content: center;
+  padding: 20px;
+  padding-left: 10%;
+
 }
 
-.modal-part:nth-child(even) {
-  background-color: #f49777;
+.modal-part:nth-child(1) {
+  background-color: #0b7eb5;
 }
 
-.modal-part:nth-child(odd) {
-  background-color: #68a9cc;
+.modal-part:nth-child(2) {
+  background-color: #1d85b5;
+}
+.modal-part:nth-child(3) {
+  background-color: #2f8bb5;
+}
+.modal-part:nth-child(4) {
+  background-color: #4190b5;
 }
 
 .modal-img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.third {
+  margin: auto;
+  display: inline-block;
+  width: 30%;
+  height: 250px;
+  vertical-align: text-top;
+}
+
+.third p, .third h2 {
+  color: #fff;
 }
 
 /* The Close Button */
@@ -219,4 +242,69 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: white;
+    color: #515151;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 10px;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 12px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
