@@ -16,10 +16,10 @@
 <!-- Navigation Bar -->
 <div id="stickybar">
 	<div class="navbar">
-	  <a href="#chapter1"><div id="chap1" class="chapter"><img src="img/electoralroll.png" alt="Picture"></div></a>
-	  <a href="#chapter2"><div id="chap2" class="chapter"><img src="img/ballot.png" alt="Picture"></div></a>
-	  <a href="#chapter3"><div id="chap3" class="chapter"><img src="img/verify.png" alt="Picture"></div></a>
-	  <a href="#chapter4"><div id="chap4" class="chapter"><img src="img/tally.png" alt="Picture"></div></a>
+	  <a id="chap1"  href="#chapter1"><div class="chapter"><img src="img/electoralroll.png" alt="Picture"></div></a>
+	  <a id="chap2" href="#chapter2"><div class="chapter"><img src="img/ballot.png" alt="Picture"></div></a>
+	  <a id="chap3" href="#chapter3"><div class="chapter"><img src="img/verify.png" alt="Picture"></div></a>
+	  <a id="chap4" href="#chapter4"><div class="chapter"><img src="img/tally.png" alt="Picture"></div></a>
 	  </div>
 
 	<!-- The flexible grid (content) -->
@@ -205,9 +205,7 @@
 
 <script>
       // When the user scrolls the page, execute myFunction
-      window.onscroll = function() { 
-        myFunction();
-      };
+      
 
       function myFunction() {
         var winScroll =
@@ -232,24 +230,24 @@
         var chap4 = document.getElementById('chapter4');
         var chap4rect = chap4.getBoundingClientRect();
         if (chap1rect.top <= header.bottom) {
-          document.getElementById('chap1').style.color = '#ccc';
+          document.getElementById('chap1').style.backgroundColor = '#059ada';
         } else {
-          document.getElementById('chap1').style.color = 'white';
+          document.getElementById('chap1').style.backgroundColor = '#0b7eb5';
         }
         if (chap2rect.top <= header.bottom) {
-          document.getElementById('chap2').style.color = '#ccc';
+          document.getElementById('chap2').style.backgroundColor = '#059ada';
         } else {
-          document.getElementById('chap2').style.color = 'white';
+          document.getElementById('chap2').style.backgroundColor = '#0b7eb5';
         }
         if (chap3rect.top <= header.bottom) {
-          document.getElementById('chap3').style.color = '#ccc';
+          document.getElementById('chap3').style.backgroundColor = '#059ada';
         } else {
-          document.getElementById('chap3').style.color = 'white';
+          document.getElementById('chap3').style.backgroundColor = '#0b7eb5';
         }
 		if (chap4rect.top <= header.bottom) {
-          document.getElementById('chap4').style.color = '#ccc';
+          document.getElementById('chap4').style.backgroundColor = '#059ada';
         } else {
-          document.getElementById('chap4').style.color = 'white';
+          document.getElementById('chap4').style.backgroundColor = '#0b7eb5';
         }
       }
 
@@ -264,6 +262,7 @@
 		  } else {
 		    stickybar.classList.remove("sticky");
 		  }
+		  myFunction();
 		}
 
 		// Get the modal
