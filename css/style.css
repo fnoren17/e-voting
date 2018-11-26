@@ -1,21 +1,21 @@
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans Regular",arial,sans-serif;
-    color: #515151;
+  box-sizing: border-box;
+  font-family: 'Open Sans Regular', arial, sans-serif;
+  color: #515151;
 }
 
 /* Style the body */
 body {
-    font-family: "Open Sans Regular",arial,sans-serif;
-    margin: 0;
+  font-family: 'Open Sans Regular', arial, sans-serif;
+  margin: 0;
 }
 
 /* Header/logo Title */
 .header {
-    padding: 40px 40px 40px 90px;
-    text-align: left;
-    background: #fff;
-    color: #515151;
+  padding: 40px 40px 40px 90px;
+  text-align: left;
+  background: #fff;
+  color: #515151;
 }
 
 .header h1 {
@@ -24,19 +24,19 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
-    display: flex;
-    background-color: #0b7eb5;
-    justify-content: space-around;
-    color: white;
+  display: flex;
+  background-color: #0b7eb5;
+  justify-content: space-around;
+  color: white;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-    color: white;
-    padding: 14px 70px;
-    text-decoration: none;
-    text-align: center;
-    flex-grow: 1;
+  color: white;
+  padding: 14px 70px;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .navbar a:hover {
@@ -60,15 +60,15 @@ body {
 }
 
 .sticky + .row {
-  padding-top: 100px;
+  padding-top: 125px;
 }
 
 /* Column container */
-.toprow {  
-    display: flex;
-    flex-wrap: none;
-    width: 100%;
-    background-color: #f26631;
+.toprow {
+  display: flex;
+  flex-wrap: none;
+  width: 100%;
+  background-color: #f26631;
 }
 
 .halfwidth {
@@ -80,25 +80,24 @@ body {
   font-size: 1.2rem;
 }
 
-
 /* Column container */
-.row {  
-    display: flex;
-    flex-wrap: none;
-    width: 100%;
-    background-color: #fff;
-    padding-right: 70px;
-    padding-left: 70px;
-    justify-content: center;
-    align-items: center;
+.row {
+  display: flex;
+  flex-wrap: none;
+  width: 100%;
+  background-color: #fff;
+  padding-right: 70px;
+  padding-left: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    flex: 40%;
-    background-color: #fff;
-    padding: 50px;
+  flex: 40%;
+  background-color: #fff;
+  padding: 50px;
 }
 
 .side h2 {
@@ -111,13 +110,13 @@ body {
 
 /* Main column */
 .main {
-    display: flex;
-    flex: 5%;
-    background-color: #fff;
-    padding: 20px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex: 5%;
+  background-color: #fff;
+  padding: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .imgitem {
@@ -131,15 +130,15 @@ body {
 }
 
 .imgitem img {
-width: 30px;
-height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
-    text-align: center;
-    background: #eee;
+  padding: 20px;
+  text-align: center;
+  background: #eee;
 }
 
 .footer h2 {
@@ -148,48 +147,49 @@ height: 30px;
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-    .row, .navbar {   
-        flex-direction: column;
-    }
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
 }
 
 button {
   float: right;
-    background-color: #f26631; 
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9rem;
+  background-color: #f26631;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
   position: relative;
-    display: flex;
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 12px;
-    border: 0px solid #888;
-    border-radius: 10px;
-    width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 12px;
+  border: 0px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 .modal-part {
@@ -198,7 +198,6 @@ button {
   align-content: center;
   padding: 20px;
   padding-left: 10%;
-
 }
 
 .modal-part:nth-child(1) {
@@ -229,7 +228,8 @@ button {
   vertical-align: text-top;
 }
 
-.third p, .third h2 {
+.third p,
+.third h2 {
   color: #fff;
 }
 
@@ -239,44 +239,44 @@ button {
 
 /* The Close Button */
 .close {
-    float: right;
-    top: 2px;
-    left: 100%;
+  float: right;
+  top: 2px;
+  left: 100%;
 }
 
 .close:hover,
 .close:focus {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Tooltip container */
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 170px;
-    background-color: white;
-    color: #515151;
-    font-size: 0.9rem;
-    text-align: left;
-    padding: 10px;
-    border-radius: 6px;
- 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    margin-left: -85px;
+  visibility: hidden;
+  width: 170px;
+  background-color: white;
+  color: #515151;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: -85px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 /* Hide the slides by default */
