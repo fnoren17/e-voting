@@ -105,6 +105,10 @@ body {
   font-weight: lighter;
 }
 
+.side p {
+  line-height: 1.3rem;
+}
+
 /* Main column */
 .main {
     display: flex;
@@ -229,19 +233,19 @@ button {
   color: #fff;
 }
 
+.third p {
+  line-height: 1.3rem;
+}
+
 /* The Close Button */
 .close {
-    position: relative;
+    float: right;
     top: 2px;
     left: 100%;
-    font-size: 28px;
-    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }
 

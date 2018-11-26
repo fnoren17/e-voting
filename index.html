@@ -16,7 +16,7 @@
 <!-- Navigation Bar -->
 <div id="stickybar">
 	<div class="navbar">
-	  <a id="chap1"  href="#chapter1"><div class="chapter"><img src="img/electoralroll.png" alt="Picture"></div></a>
+	  <a id="chap1" href="#chapter1"><div class="chapter"><img src="img/electoralroll.png" alt="Picture"></div></a>
 	  <a id="chap2" href="#chapter2"><div class="chapter"><img src="img/ballot.png" alt="Picture"></div></a>
 	  <a id="chap3" href="#chapter3"><div class="chapter"><img src="img/verify.png" alt="Picture"></div></a>
 	  <a id="chap4" href="#chapter4"><div class="chapter"><img src="img/tally.png" alt="Picture"></div></a>
@@ -53,13 +53,10 @@
 <div id ="chapter2" class="row">
   <div class="side">
       <div class="votingitem">
-        <h2>The steps of paper voting</h2>
+        <h2>The vote in a paper voting</h2>
         <p>
         	Voter choose a ballot paper, then put the ballot papers into envelopes while standing in a booth. The envelopes are placed in the ballot box and the voter is checked off the electoral roll.
     	</p>
-        <!--<p>
-        	The envelope and the voting booth strives to ensure <b>voting privacy</b> and resist <b>coercion</b>. However, since the ballot papers are picked outside of the voting booth, others can see which ballot papers are picked. 
-        </p>-->
         <button id="myBtn">Why do we do this way?</button>
 
 		<!-- The Modal -->
@@ -114,18 +111,22 @@
 		    <div class="modal-part mySlides">
 		    	<div class="third">
 		    		<h2>The Envelope</h2>
-		    		<p>Different ballot paper stands for different party, each voter chooses a ballot paper and put it into the pile in the middle, and all the voters could see the pile as oberservers.
+		    		<p>
+		    			Voter choose a ballot paper, then put the ballot papers into envelopes while standing in a booth. The envelopes are placed in the ballot box and the voter is checked off the electoral roll.
+		    		</p>
 		    	</div>
 		    	<div class="third">
 		    		<img src="img/envelope.png" class="modal-img">
 		    	</div>
 		    	<div class="third">
 		    		<h2>Possible Attack</h2>
-		    		<p>This is the way we do it!</p>
+		    		<p>
+		    			This is the way we do it. However, since ballot papers are picked before going to the booth, voting secrecy can be lost.
+		    		</p>
+		    		<button class="close" id="close">I understand!</button>
 		    	</div>
 			</div>
 		    
-		    <span class="close"></span>
 		    <!-- Next/previous controls -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -141,14 +142,54 @@
   </div>
   <div class="side">
       <div class="votingitem">
-        <h2>The steps of electronic voting</h2>
+        <h2>The vote in an electronic voting</h2>
         <p>
-        	Electronic voting systems also have electoral rolls, and users need to authenticate themselves by signatures, password or one-time code in order to vote. 
+        	Electronic voting systems has write only bulletin board, which means nobody can erase anything in the system, and as the authentication, duplicated voings are impossible. Also, voters could check if their votes appear in the system, to confirm their votes are not changed by anyone.
         </p>
-        <p>
-        	To protect <b>voting privacy</b> for electronic voting the votes are encrypted into ciphertext. Also, <b>coercion</b> is resisted by giving the voter the possibility to change his/her vote.
-        </p>
-      </div>
+        <button id="myBtn2">Why do we do this way?</button>
+
+		<!-- The Modal -->
+		<div id="myModal2" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <div class="modal-part mySlides2">
+		    	<div class="third">
+		    		<h2>Bulleting Board</h2>
+		    		<p>Everyone whisper the name of the party or people he/she wants to vote for to the Angel, and the Angel annouces everyone's vote.
+		    		</p>
+		    	</div>
+		    	<div class="third">
+		    		<img src="img/bulletinboard.png" class="modal-img">
+		    	</div>
+		    	<div class="third">
+		    		<h2>Possible Attack</h2>
+		    		<p>What if other people see my vote?</p>
+		    	</div>
+		    </div>
+		    <div class="modal-part mySlides2">
+		    	<div class="third">
+		    		<h2>Observing the votes</h2>
+		    		<p>Different ballot paper stands for different party, each voter chooses a ballot paper and put it into the pile in the middle, and all the voters could see the pile as oberservers.
+		    		</p>
+		    	</div>
+		    	<div class="third">
+		    		<img src="img/encryption.png" class="modal-img">
+		    	</div>
+		    	<div class="third">
+		    		<h2>Possible Attack</h2>
+		    		<p>What if the client lies?</p>
+		    		<a href="#chapter3"><button class="close" id="close2">Read about verification</button></a>
+		    	</div>
+
+
+		    </div>
+		    <!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+		</div>
+      </div> <!-- close modal -->
+
+   </div>
   </div>
 </div>
 
@@ -165,7 +206,7 @@
   </div>
   <div class="side">
       <div class="votingitem">
-        <h2>Verifying</h2>
+        <h2>Verification</h2>
         <p>
         	In an electronic voting system there are scepstics to whether the vote is actually counted to the correct party. For the voter to ensure that the votes are not tampered with, the voter can <b>verify</b> the vote at all time after voting.
         </p>
@@ -267,27 +308,41 @@
 
 		// Get the modal
 		var modal = document.getElementById('myModal');
+		var modal2 = document.getElementById('myModal2');
 
 		// Get the button that opens the modal
 		var btn = document.getElementById("myBtn");
+		var btn2 = document.getElementById("myBtn2");
 
 		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		var span = document.getElementById("close");
+		var span2 = document.getElementById("close2");
 
 		// When the user clicks on the button, open the modal 
 		btn.onclick = function() {
 		    modal.style.display = "block";
+		}
+		btn2.onclick = function() {
+		    modal2.style.display = "block";
 		}
 
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 		    modal.style.display = "none";
 		}
+		span2.onclick = function() {
+		    modal2.style.display = "none";
+		}
 
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 		    if (event.target == modal) {
 		        modal.style.display = "none";
+		    }
+		}
+		window.onclick = function(event) {
+		    if (event.target == modal2) {
+		        modal2.style.display = "none";
 		    }
 		}
 		var slideIndex = 1;
@@ -312,6 +367,29 @@
 		    slides[i].style.display = "none";
 		  }
 		  slides[slideIndex-1].style.display = "block";
+		}
+
+		var slideIndex2 = 1;
+		showSlides2(slideIndex2);
+		// Next/previous controls
+		function plusSlides2(n) {
+		  showSlides2(slideIndex2 += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide2(n) {
+		  showSlides2(slideIndex2 = n);
+		}
+
+		function showSlides2(n) {
+		  var j;
+		  var slides2 = document.getElementsByClassName("mySlides2");
+		  if (n > slides2.length) {slideIndex2 = 1}
+		  if (n < 1) {slideIndex2 = slides2.length}
+		  for (j = 0; j < slides2.length; j++) {
+		    slides2[j].style.display = "none";
+		  }
+		  slides2[slideIndex2-1].style.display = "block";
 		}
     </script>
 </html>
