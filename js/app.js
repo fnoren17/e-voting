@@ -5,6 +5,7 @@
 var timeoutBool = true;
 var timeout = 3000; //ms
 var currentChapter = 1;
+var lastScroll = 0;
 
 window.onscroll = function(e) {
   // print "false" if direction is down and "true" if up
@@ -20,17 +21,18 @@ for (var i = 0; i < chapters.length; i++) {
 }
 
 contentContainer.addEventListener('scroll', e => {
-  var scrollDirection = this.oldScroll > this.scrollY;
+  var st = contentContainer.scrollTop;
 
   if (timeoutBool) {
     timeoutBool = false;
-
-    console.log(scrollDirection);
-    // Down = false // Up = true
-    if (scrollDirection) {
+    if (st > lastScroll) {
+      // Scrolling down
+      console.log('down');
+    } else {
+      // Scrolling up
+      console.log('up');
     }
-    // run normal code
-
+    lastScroll = st <= 0 ? 0 : st;
     window.setTimeout(() => {
       timeoutBool = true;
       console.log(timeoutBool);
