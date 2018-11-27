@@ -21,6 +21,7 @@ for (var i = 0; i < chapters.length; i++) {
 }
 
 contentContainer.addEventListener('scroll', e => {
+  scrollHandler();
   var st = contentContainer.scrollTop;
 
   if (timeoutBool) {
@@ -39,7 +40,17 @@ contentContainer.addEventListener('scroll', e => {
     }, timeout);
   }
 });
+function isScrolledIntoView(el) {
+  var rect = el.getBoundingClientRect();
+  var elemTop = rect.top;
+  var elemBottom = rect.bottom;
 
+  // Only completely visible elements return true:
+  var isVisible = elemTop <= window.innerHeight;
+  // Partially visible elements return true:
+  //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+  return isVisible;
+}
 function scrollHandler() {
   if (window.pageYOffset >= sticky) {
     stickybar.classList.add('sticky');
@@ -56,22 +67,22 @@ function scrollHandler() {
   var chap4 = document.getElementById('chapter4');
   var chap4rect = chap4.getBoundingClientRect();
 
-  if (chap1rect.bottom <= header.bottom) {
+  if (isScrolledIntoView(chap1)) {
     document.getElementById('chap1').style.backgroundColor = '#059ada';
   } else {
     document.getElementById('chap1').style.backgroundColor = '#0b7eb5';
   }
-  if (chap2rect.bottom <= header.bottom) {
+  if (isScrolledIntoView(chap2)) {
     document.getElementById('chap2').style.backgroundColor = '#059ada';
   } else {
     document.getElementById('chap2').style.backgroundColor = '#0b7eb5';
   }
-  if (chap3rect.bottom <= header.bottom) {
+  if (isScrolledIntoView(chap3)) {
     document.getElementById('chap3').style.backgroundColor = '#059ada';
   } else {
     document.getElementById('chap3').style.backgroundColor = '#0b7eb5';
   }
-  if (chap4rect.bottom <= header.bottom) {
+  if (isScrolledIntoView(chap4)) {
     document.getElementById('chap4').style.backgroundColor = '#059ada';
   } else {
     document.getElementById('chap4').style.backgroundColor = '#0b7eb5';
