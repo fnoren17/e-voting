@@ -62,7 +62,7 @@ body {
   width: 100%;
 }
 
-.sticky + .content-container {
+.sticky + #content-container {
   padding-top: 125px;
 }
 
@@ -70,9 +70,10 @@ body {
   height: 100%;
 }
 
-.content-container {
+#content-container {
   align-self: stretch;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 /* Column container */
 .toprow {
